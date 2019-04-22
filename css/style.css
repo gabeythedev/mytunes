@@ -26,6 +26,10 @@ a {
   color: #ccc;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Section */
 .section {
   padding: 2rem 0;
@@ -42,7 +46,7 @@ a {
 
 section#entertainment {
   background: url(../img/entertainment.jpg) no-repeat bottom/cover;
-  padding: 10rem;
+  padding: 10rem 0;
 }
 
 .gift-cards {
@@ -92,6 +96,33 @@ section#entertainment {
 #showcase h2{
   font-size: 2rem;
 }
+
+/* Footer */
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+footer .footer-cols ul {
+  list-style: none;
+}
+
+footer .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+  background: #333;
+  padding: 1rem;
+
+}
+
 /* Utility Classes */
 .container {
   max-width: 1180px;
@@ -241,4 +272,18 @@ nav a#openup {
   zoom: 1;
 }
 
+@media screen and (max-width: 780px) {
+  .gift-cards {
+    grid-template-columns: 1fr;
+  }
+  footer .footer-cols {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  #showcase p.lead {
+    display: none;
+  }
+}
 /* For IE 6/7 (trigger hasLayout) */

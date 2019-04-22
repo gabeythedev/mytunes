@@ -19,3 +19,21 @@ $(function() {
   });
   $('.open-menu').height($(window).height());
 });
+
+// Smooth Scolling 
+$('.cf a').on('click', function(event) {
+  if (this.has !== '') {
+    event.preventDefault();
+    
+    const has = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().scrollTop
+      },
+      800,
+      function() {
+        window.location.hash = hash;
+      }
+    )
+})
