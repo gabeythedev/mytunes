@@ -42,15 +42,20 @@ a {
 
 /* Text Colors */
 .text-primary {
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .text-secondary {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .text-light {
-  color: var(--light-color)
+  color: var(--light-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
 }
 /* Showcase */
 #showcase {
